@@ -6,6 +6,6 @@ public class Klaxon : MonoBehaviour
 
     private void Update()
     {
-        transform.Rotate(new Vector3(0, 0, Speed), Space.Self);
+        transform.Rotate(new Vector3(0, 0, Speed * Time.deltaTime * 100), Space.Self);
     }
 }
